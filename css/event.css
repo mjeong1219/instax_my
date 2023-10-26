@@ -1,0 +1,478 @@
+.event {
+    background-color: #eee;
+    width: 1000px;
+}
+.event .inner {
+    padding: 0 50px;
+}
+.event .event-main-logo{
+    margin-bottom: 120px;
+    text-align: center;
+}
+.event .event-main-logo > img{
+    width: 100%;
+}
+.event .event-main-logo img:last-child{
+    width: 60%;
+    padding-top: 60px;
+}
+.event .event-box {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 20px 40px rgba(20, 20, 21, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 100px;
+}
+.event a.btn span{
+    color: #fff;
+}
+.event a.btn {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0px;
+    width: 250px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s linear 0s;
+}
+.event button{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0px;
+    width: 250px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s linear 0s;
+}
+.event a.btn::before {
+    content: "→";
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    transition: all 0.2s linear 0s;
+    color: #fff;
+}
+.event a.btn:hover {
+    text-indent: -20px;
+}
+.event a.btn:hover::before {
+    opacity: 1;
+    text-indent: 0px;
+}
+.event button::before{
+    content: "→";
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    transition: all 0.2s linear 0s;
+    color: #fff;
+}
+.event button:hover{
+    text-indent: -20px;
+}
+.event button:hover::before{
+    opacity: 1;
+    text-indent: 0px;
+}
+.event .event-title{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event .event-txt{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 70px;
+    color: #fff;
+    line-height: 30px;
+}
+.event .event-txt b{
+    font-weight: 800;
+    font-size: 16px;
+}
+.event .event-title img{
+    width: 100%;
+}
+
+/* event1 */
+.event .event1{
+    background: #C1ADFB;
+    border-radius: 100px 0 100px 0;
+    margin-bottom: 100px;
+}
+.event .event1 .event1-main{
+    position: relative;
+}
+.event .event1 .event1-main img:last-child{
+    position: absolute;
+    top: 47.9%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+.event .event1 .event-tip{
+    display: grid;
+    width: 105%;
+    grid-template-columns: 100px 2fr;
+    grid-template-rows: 90px 20px 90px 20px;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.event .event1 .event-tip img{
+    margin: 0 auto;
+    width: 60px;
+}
+.event .event1 .event-tip span{
+    font-size: 18px;
+    line-height: 22px;
+}
+.event .event1 .event-tip span b{
+    font-weight: 800;
+    font-size: 18px;
+    color: #6c3bff;
+}
+
+/* event2 */
+.event .event2{
+    background: #ECA79D;
+    border-radius: 100px 0 100px 0;
+    position: relative;
+}
+.event2 .event2-main-txt{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.event .event2 .event-main .event-info-titles{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+.event .event2 .event-main .event-info-titles > .event-info-title{
+    height: 70px;
+    background: #F17979;
+    border-radius: 30px 30px 0 0;
+    text-align: center;
+    line-height: 70px;
+    font-size: 40px;
+    color: #fff;
+    transition: all 0.2s linear 0s;
+    cursor: pointer;
+}
+.event .event2 .event-main .event-info-titles > div img{
+    width: 45%;
+}
+.event .event2 .event-main .event-info-titles > .event-info-title.hovered{
+    background: #ffcac2;
+    color: #000;
+}
+.event .event2 .event-main .event-info-titles > .event-info-title.hovered img{
+    filter: invert(50%) sepia(6%) saturate(7278%) hue-rotate(309deg) brightness(93%) contrast(104%);
+}
+.event .event2 .event-main .event-info{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 0 50px 50px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event .event2 .event-main .event-info-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.event .event2 .event-main .event-info-box:nth-child(2),
+.event .event2 .event-main .event-info-box:nth-child(3){
+    display: none;
+}
+.event .event2 .event-main .event-tip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.event .event2 .event-main .event-tip > img{
+    width: 60px;
+}
+.event .event2 .event-main .event-tip > span{
+    font-size: 20px;
+    text-align: left;
+}
+.event .event2 .event-main .event-tip > span b{
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+.event .event2 .event-main .event-tip > span b::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #E93C3C;
+    transition: width 0.5s ease-in-out;
+}
+.event .event2 .event-main .event-tip > span b:hover::before {
+    width: 100%;
+}
+.event .event2 .event-main .hashtag{
+    padding: 10px 40px;
+    display: inline-block;
+    background-color: #E93C3C;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+.event .event2 .event-ex{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.event .event2 .event-ex img{
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.event .event2 .event2-txt{
+    font-size: 20px;
+    margin-top: 80px;
+}
+.event .event2 .event2-txt b{
+    font-weight: 700;
+    color: #E93C3C;
+}
+.event .event2 a.btn{
+    background-color: #E93C3C;
+}
+
+.event .gift-line{
+    width: 90%;
+    margin-top: 100px;
+}
+.event .event-gift{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event .event-gift1-title{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: 700;
+    color: #F17979;
+}
+.event .gift-title::after{
+    content: "각 1명";
+    position: absolute;
+    top: -50px;
+    right: -70px;
+    background-image: url("../images/event-gift-after.png");
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+}
+.event .event-gift1{
+    width: 400px;
+}
+.event .event-gift-footer{
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.event .event-gift-footer .event-gift-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 230px;
+}
+.event .event-gift-footer .gift-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #F17979;
+}
+.event .event-gift-footer img{
+    width: 180px;
+}
+.event .event-gift-footer .gift-title::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    right: 0;
+    top: -30px;
+}
+.event .event-gift-footer .event-gift2-title::after{
+    content: "각 5명";
+    font-size: 14px;
+}
+.event .event-gift-footer .event-gift3-title::after{
+    content: "각 50명";
+    font-size: 12px;
+}
+.event .event-gift-footer .event-gift4-title::after{
+    content: "각 100명";
+    font-size: 10px;
+}
+
+/* event-footer */
+.event-footer{
+    width: 100%;
+    margin-top: 100px;
+    background-color: #3496C0;
+    padding: 50px;
+    color: #fff;
+}
+.event-footer h3{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.event-footer h3 i{
+    color: #fff;
+    font-size: 16px;
+}
+.event-footer ul li{
+    list-style: circle;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+/* 모달 스타일 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content {
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fcfcfc;
+    margin: 30% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+}
+.modal-content h2{
+    font-size: 18px;
+    fpadding: 20px;
+    font-weight: bold;
+}
+.modal-content label{
+    margin-left: 10px;
+    font-weight: 600; 
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.modal-content input{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 5px;
+    width: 330px;
+}
+.modal-content select{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 5px;
+    width: 330px;
+}
+.modal-content button{
+    background-color: #6c3bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+.ckbox{
+    width: 100px;
+    height: 33px;
+}
+/* 추가된 모달 스타일 */
+#event-modal, #result-modal {
+    display: none;
+}
+
+/* 모달 버튼 스타일 */
+#open-modal-button {
+    margin-top: 50px;
+    background-color: #6c3bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;    
+    margin-top: 50px;
+}
+

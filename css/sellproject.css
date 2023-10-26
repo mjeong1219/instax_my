@@ -1,0 +1,81 @@
+.sell {
+   background-color: #7666a7;
+    width: 1000px;
+}
+.sell .inner {
+    padding: 0 50px;
+}
+.sell .sell-main-logo{
+    margin-bottom: 200px;
+}
+.sell .sell-box {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 20px 40px rgba(20, 20, 21, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 54px 100px;
+    background-color: #C1ADFB;
+}
+
+/* sell1 */
+.sell .sell1{
+    background: #744cea;
+    border-radius: 100px 0 100px 0;
+    margin-bottom: 150px;
+}
+#selltitle{
+    margin-left: 8%;
+}
+#sellparty{
+    margin-top: -2%;
+    margin-left: -10%;
+    width: 22%;
+}
+
+#sellmain {
+  margin-top: 30px;
+  margin-left: -23px;  
+}
+.sell a.btn span{
+    color: #fff;
+}
+.sell a.btn {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0px;
+    width: 200px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s linear 0s;
+    background-color:#744cea;
+    margin-top: -10%;
+    margin-left: -8%;
+}
+.sell a.btn::before {
+    content: "→";
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    transition: all 0.2s linear 0s;
+    color: #fff;
+}
+.sell a.btn:hover {
+    text-indent: -20px;
+}
+.sell a.btn:hover::before {
+    opacity: 1;
+    text-indent: 0px;
+}

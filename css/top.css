@@ -1,0 +1,128 @@
+/* 탑 버튼 */
+.top-button{
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+    width: auto;
+}
+.top-event-button{
+    width: 150px;
+    margin-bottom: 10px;
+    animation: bounce 1s infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-event-button:hover .top-button-pop{
+    display: block;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-2px);
+    }
+    20% {
+        transform: translateY(-4px);
+    }
+    30% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(-8px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-8px);
+    }
+    70% {
+        transform: translateY(-6px);
+    }
+    80% {
+        transform: translateY(-4px);
+    }
+    90% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.top-button-pop{
+    position: relative;
+    background-image: url("../images/top-speech-bubble.png");
+    background-size: 100%;
+    top: -5px;
+    width: 80%;
+    height: 97px;
+    display: none;
+}
+.top-button-pop p{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+}
+.top-btn{
+    display: block;
+    background-color: #e45e5e96;
+    border-radius: 50%;
+    width: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+.top-btn img{
+    transform: rotate(180deg);
+}
+.top-btn img.up{
+    transform: rotate(0deg);
+}
+
+
+@media all and (max-width: 1680px) {
+}
+@media all and (max-width: 1280px) {
+}
+@media all and (max-width: 1024px) {
+}
+/* mobile */
+@media all and (max-width: 768px) {
+    .top-button{
+        right: 10px;
+        bottom: 30px;
+    }
+    .top-event-button{
+        width: 120px;
+    }
+    .top-button-pop{
+        height: 77px;
+    }
+    .top-btn{
+        width: 45px;
+        line-height: 45px;
+    }
+    .top-button-pop p{
+        font-size: 12px;
+    }
+}
+@media all and (max-width: 480px) {
+    .top-event-button{
+        width: 100px;
+    }
+    .top-button-pop {
+        height: 65px;
+    }
+    .top-button-pop p{
+        font-size: 10px;
+    }
+}

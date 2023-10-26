@@ -1,0 +1,266 @@
+/* 와이드 필름 */
+.wide {
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+.wide::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#c0adb000,#e7d5c5,#e7d5c5,#c0adb000);
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wide-active::before{
+  opacity: 1;
+}
+.wide .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wide-circle {
+  position: relative;
+  width:45%;
+  border-radius: 500px;
+  background-color: #fff;
+  left: 10%; 
+  background: url("../images/wide-background.jpeg") no-repeat;
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3) ;
+
+  background-size: cover;
+}
+.wide-circle::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  left: 50%;  
+}
+.wide-point{
+    position: absolute;
+    display: flex;
+    align-content: space-between;
+    right: 6vw;
+    bottom: -2vw;
+    z-index: 999;
+    opacity: 0;
+    transition: 1s;
+}
+.wide-point.active{
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+.wide-point2{
+  position: absolute;
+  width: 10%;
+  top: 10%;
+  left: -9%;
+  z-index: 1;
+  min-width: 50px;
+  width: 13%;
+  opacity: 0; 
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.wide-point{
+  width: 50%;
+}
+.wide-point img{
+  width: 53%;
+  z-index: 999;
+}
+.wide-point2 img{
+  width: 89%;
+  
+}
+.wide-point2-active{
+  opacity: 1;
+}
+.wide-point-text {
+  position: absolute;
+  bottom: -10px;
+  left: 56%;
+  color: #000000;
+  font-size: 20px;
+  width: 91px;
+  font-weight: 400;
+}
+.wide-point-text2 {
+  position: absolute;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  top: -25%;
+  left: -49%;
+  width: 100px;
+}
+
+.wide-camera {
+  position: absolute;
+  width: 84%;
+  top: -1%;
+  left: -31%;
+  transform: translateY(61%);
+  z-index: 99;
+  
+}
+.wide-camera img {
+width: 100%;
+}
+.wide-film{
+  position: absolute;
+  width: 40%;
+  left: -5%;
+  top: 60%;
+  transition-duration: 1s;
+}
+.wide-film img{
+  width: 100%;
+  box-shadow:   0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3) ;
+  
+}
+.wide-text {
+  top: 137px;
+  right: 102%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+.wide-text h1 {
+  color: #000000;
+  font-size: 3vw;
+  font-weight: 800;
+}
+.wide-text h4 {
+  margin-top: 40px;
+  padding: 10px 0px;
+  font-size: 1.2vw;
+  font-weight: 400;
+  color: #636363;
+}
+/* .wide active */
+.wide-active .wide-film{
+  top: 20%;
+}
+
+@media all and (max-width: 1680px) {
+}
+
+@media all and (max-width: 1280px) {
+}
+@media all and (max-width: 1024px) {
+}
+/* mobile */
+@media all and (max-width: 768px) {
+  .wide{
+    height: auto;
+    padding: 100px 0;
+  }
+  .wide .inner{
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    gap: 50px 0;
+  }
+  .wide-circle{
+    order: 2;
+    width: 75%;
+  left: 20%;
+  }
+  .wide-text {
+    order: 1;
+    width: 100%;
+  }
+  .wide-text h1 {
+    font-size: 5vw;
+   
+  }
+  .wide-text h4 {
+    font-size: 2.7vw;
+  }
+  .wide-point{
+    left: 30%;
+  }
+  .wide-point-text {
+    font-size: 15px;
+    
+  }
+  .wide-point-text2 {
+    font-size: 15px;
+  }
+  
+}
+@media all and (max-width: 500px) {
+  .wide .inner{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .wide-circle{
+    order: 2;
+    width: 75%;
+  left: 20%;
+  }
+  .wide-text {
+    order: 1;
+    width: 100%;
+  }
+  .wide-text h1 {
+    font-size: 5vw;
+   
+  }
+  .wide-text h4 {
+    font-size: 2vw;
+  }
+  .wide-point{
+    left: 30%;
+  }
+  .wide-point-text {
+    font-size: 15px;
+    
+  }
+  .wide-point-text2 {
+    font-size: 15px;
+  }
+  
+}
+@media all and (max-width: 480px) {
+  .wide .inner{
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    align-content: center;
+    justify-content: space-around;
+  }
+  .wide-point img{
+    width: 70%;
+  }
+  .wide-point-text {
+  font-size: 10px;
+   right: -11px;
+  }
+  .wide-point-text2 {
+    font-size: 10px;
+    left: -80%;
+  }
+  .wide-text h1 {
+    font-size: 30px;
+  }
+  .wide-text h4 {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  .wide-circle {
+    width: 70%;
+   left: 5%;
+    
+  }
+ 
+  }
+ 
+
+
+

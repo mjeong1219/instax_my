@@ -1,0 +1,73 @@
+/* 영상 */
+.movie {
+ 
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.movie::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#c0adb000,#d7c9ff,#d7c9ff,#c0adb000);
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.movie-active::before{
+  opacity: 1;
+}
+.movie .inner {
+  position: relative;
+  height: 120vh;
+}
+video {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.4), 0 0 40px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+@media all and (max-width: 1680px) {
+  video {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  video {
+    width: 90%;
+    height: 50%;
+  }
+}
+@media all and (max-width: 1024px) {
+  video {
+    width: 90%;
+    height: 50%;
+  }
+}
+@media all and (max-width: 900px) {
+  video {
+    width: 90%;
+    height: 45%;
+  }
+}
+/* mobile */
+@media all and (max-width: 768px) {
+  video {
+    width: 90%;
+    height: 30%;
+  }
+}
+@media all and (max-width: 480px) {
+  video {
+    width: 90%;
+    height: 30%;
+  }
+}

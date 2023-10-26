@@ -1,0 +1,117 @@
+/* 배너 */
+.banner {
+    margin-bottom: 150px;
+}
+.banner .inner{
+    display: flex;
+}
+.banner-wrap{
+    width: 100%;
+    display: flex;
+    border-radius: 5vw;
+    overflow: hidden;
+}
+.banner-box{
+    position: relative;
+    width: 50%;
+    aspect-ratio: 1 / 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+.banner-title{
+    padding: 7px 40px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.banner .banner-event-title{
+    background-color: #707070;
+}
+.banner .banner-set-title{
+    background-color: #9571ff;
+}
+.banner .banner-event{
+    background-color: #D3D3D3;
+}
+.banner .banner-set{
+    background-color: #C1ADFB;
+}
+.banner .banner-img{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+.banner img{
+    height: 100%;
+}
+.banner .banner-set-txt{
+    font-size: 20px;
+    font-weight: 700;
+}
+.banner-button{
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.banner-button:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    color: #fff;
+}
+.banner-event .banner-button:hover{
+    background-color: #707070;
+}
+.banner-set .banner-button:hover{
+    background-color: #9571ff;
+}
+
+@media all and (max-width: 1680px) {
+}
+@media all and (max-width: 1280px) {
+    .banner-title{
+        font-size: 25px;
+        padding: 5px 30px;
+        margin-bottom: 0;
+    }
+    .banner .banner-set-txt{
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+@media all and (max-width: 1024px) {
+    .banner-title{
+        font-size: 20px;
+        padding: 1px 30px;
+    }
+    .banner .banner-img{
+        width: 100%;
+        height: 250px;
+        text-align: center;
+    }
+}
+/* mobile */
+@media all and (max-width: 768px) {
+    .banner-wrap{
+        flex-direction: column;
+    }
+    .banner-box{
+        width: 100%;
+        height: auto;
+    }
+    .banner-button{
+        font-size: 16px;
+    }
+    .banner-box{
+        aspect-ratio: 0;
+    }
+}
+@media all and (max-width: 480px) {
+}

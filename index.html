@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="INSTAX" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="INSTAX" />
+    <meta property="og:description" content="INSTAX" />
+    <meta property="og:image" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon_192x192.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/mobile_web_icon.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>INSTAX</title>
+    <!-- [if lt IE 9]
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    [endif] -->
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/load.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Owl (jquery 아래 배치 필수.) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KZR7NHXR");
+    </script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <!-- fontawsome -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- End Google Tag Manager -->
+  </head>
+  <body style="background-color: #eee">
+    <div class="loader-wrap">
+    <div class="loader">
+      <span>I</span>
+      <span>N</span>
+      <span>S</span>
+      <span>T</span>
+      <span>A</span>
+      <span>X</span>
+    </div>
+  </div>
+    <div class="wrap">
+
+    <!-- 스크롤 버튼 -->
+    <div class="top-button">
+      <a href="javascript:void(0);" onclick="openPopup()" class="top-event-button">
+        <div class="top-button-pop">
+          <p>인스탁스데이에 참여하세요!</p>
+        </div>
+        <img src="images/event_logo.png" alt="">
+      </a>
+      <a href="#" class="top-btn" id="top-btn">
+        <img src="images/top-btn.png" alt="top-btn" id="top-btn-img" />
+      </a>
+    </div>
+      <!-- 상단 -->
+      <header class="header">
+        <div class="inner">
+          <!-- 로고 -->  
+          <a href="index.html" alt="인스탁스 로고" class="logo">
+            <img src="images/logo.png" alt="인스탁스 로고" />
+          </a>
+          <!-- 메뉴 -->
+          <nav class="nav">
+            <ul>
+              <li><a href="#" alt="인스탁스 소개">인스탁스 소개</a></li>
+              <li><a href="#" alt="제품 소개">제품 소개</a></li>
+              <li><a href="#" alt="제품 상세">제품 상세</a></li>
+              <li><a href="#" alt="제품 상세">악세서리</a></li>
+              <li><a href="#" alt="이벤트">이벤트</a></li>
+            </ul>
+          </nav>
+          <!-- 모바일 메뉴 -->
+          <i class="fa-solid fa-bars" id="toggleButton"></i>
+          <nav class="nav-mb">
+            <ul>
+              <li><a href="#" alt="인스탁스 소개">인스탁스 소개</a></li>
+              <li><a href="#" alt="제품 소개">제품 소개</a></li>
+              <li><a href="#" alt="제품 상세">제품 상세</a></li>
+              <li><a href="#" alt="제품 상세">악세서리</a></li>
+              <li><a href="#" alt="이벤트">이벤트</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- 비주얼 -->
+      <section class="visual">
+        <div class="inner">
+          <div class="swiper sample-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/pic_example_01.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/pic_example_02.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/pic_example_03.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/pic_example_04.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/pic_example_05.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/pic_example_06.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/pic_example_07.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/pic_example_08.webp" />
+              </div>
+            </div>
+          </div>
+          <div class="visual-camera">
+            <img src="images/pic_product_design_05.webp" alt="흰색카메라">
+            <img src="images/pic_product_design_04.webp" alt="파란카메라">
+            <img src="images/pic_product_design_03.webp" alt="초록카메라">
+            <img src="images/pic_product_design_02.webp" alt="분홍카메라">
+            <img src="images/pic_product_design_01.webp" alt="보라카메라">
+          </div>
+          <div class="flash"></div>
+        </div>
+      </section>
+
+      <!-- 비디오 -->
+      <section class="movie">
+        <div class="inner"data-aos="zoom-in-up" data-aos-duration="1000">
+          <div class="video-box">
+            <video muted autoplay loop class>
+              <source
+                src="images/video/INSTAX mini 12 _Fill your world with joy__FUJIFILM.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </section>
+      <!-- 미니필름 -->
+      <section class="mini">
+        <div class="inner">
+          <div class="mini-circle">
+            <div class="mini-point">
+              <img src="images/mini-point.png" alt="" />
+           <span class="mini-point-text">mini 12</span>
+         </div>
+         <div class="mini-point2">
+        <img src="images/mini-point2.png" alt="" />
+           <span class="mini-point-text2">Mini film</span>
+         </div>
+            <div class="mini-film mini-film5">
+              <img src="images/film-mini-rainbow.png" alt="" />
+            </div>
+            <div class="mini-film mini-film4">
+              <img src="images/film-mini-contact-sheet.png" alt="" />
+            </div>
+            <div class="mini-film mini-film3">
+              <img src="images/film-mini-confetti.png" alt="" />
+            </div>
+            <div class="mini-film mini-film2">
+              <img src="images/film-mini-mermaid-tail.png" alt="" />
+            </div>
+            <div class="mini-film mini-film1">
+              <img src="images/film-mini-blue-marble.png" alt="" />
+            </div>
+            <div class="mini-camera">
+              <img src="images/mini_12_pastelBlue.png" alt=""/>
+            </div>
+          </div>
+          <div class="mini-text"data-aos="fade-left" data-aos-duration="2000">
+            <h1>
+              다양한 디자인의 <br />
+              필름을 만나보세요.
+            </h1>
+            <h4>
+              필름마다 담긴 느낌과 분위기로 <br />표현하고 싶은 순간을 특별히
+              담을 수 있습니다. <br />여러가지 선택 속에서 나만의 감성을
+              찾아보세요.
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- 스퀘어필름 -->
+      <section class="square">
+        <div class="inner">
+          <div class="square-text" data-aos="fade-up" data-aos-duration="2000">
+            <h1>바로 인화하여 특별함을 <br />오래도록 간직하세요.</h1>
+            <h4>
+              시간이 흘러도 변하지 않는 추억을 <br />바로 인화하여 더욱 특별하게
+              만들어 보세요. <br />오래도록 당신의 마음속에서 빛나는 순간들을
+              만들어냅니다.
+            </h4>
+          </div>
+          <div class="square-circle">
+            <div class="square-point">
+              <img src="images/square-point.png" alt="" />
+              <span class="square-point-text">Square film</span>
+            </div>
+            <div class="square-point2">
+              <img src="images/square-point2.png" alt="" />
+              <span class="square-point-text2">SQURE SQ1</span>
+            </div>
+            <div class="square-camera">
+              <img src="images/square_sq1_terracottaOrange.png" alt=""  />
+            </div>
+            <div class="square-film">
+              <img src="images/square-film.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 와이드필름 -->
+      <section class="wide">
+        <div class="inner">
+          <div class="wide-circle">
+            <div class="wide-point">
+                 <img src="images/wide-point.png" alt="" />
+              <span class="wide-point-text">WIDE 300</span>
+            </div>
+            <div class="wide-point2">
+           <img src="images/wide-point2.png" alt="" />
+              <span class="wide-point-text2">Wide film</span>
+            </div>
+            <div class="wide-camera">
+              <img src="images/wide_300_toffee.png" alt=""/>
+            </div>
+            <div class="wide-film">
+              <img src="images/wide-film.png" alt="">
+            </div>
+          </div>
+          <div class="wide-text" data-aos="fade-right" data-aos-duration="2000">
+            <h1>순간의 자연스러움을 <br />영원히 간직하세요.</h1>
+            <h4>
+              인스탁스로 담아낸 그 순간의 따뜻한 감성과 <br />자연스러움으로
+              언제든지 그때의 감정을 느껴보세요.
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- 디테일 -->
+      <section class="detail">
+        <div class="inner" data-aos="fade-right" data-aos-duration="1000">
+          <div class="detail-wrap">
+            <!-- <div class="detail-circle circle"></div>
+            <div class="detail-circle-next circle"></div> -->
+            <div class="detail-slide owl-carousel">
+              <div class="item">
+                <div class="item-wrap" style="color: #BFB2CE">
+                  <div class="detail-info new">
+                    <div class="background-title">mini</div>
+                    <span class="detail-title">mini 12</span>
+                    <div class="color-name">
+                      <p>Lilac Purple</p>
+                      <p>Blossom Pink</p>
+                      <p>CLAY White</p>
+                      <p>Mint Green</p>
+                      <p>Pastel Blue</p>
+                    </div>
+                    <a href="https://www.fujifilm.co.kr/goods/detail.do?goodsIdx=50516" class="btn detail-buy-button">
+                      <span>구매하기</span>
+                    </a>
+                  </div>
+                  <div class="detail-camera">
+                    <div class="detail-pic camera">
+                      <img src="images/mini_12_lilacPurple.png" alt="mini12" />
+                      <img src="images/mini_12_blossomPink.png" alt="mini12" />
+                      <img src="images/mini_12_CLAYWhite.png" alt="mini12" />
+                      <img src="images/mini_12_mintGreen.png" alt="mini12" />
+                      <img src="images/mini_12_pastelBlue.png" alt="mini12" />
+                    </div>
+                    <div class="detail-color">
+                      <div class="purple"></div>
+                      <div class="pink"></div>
+                      <div class="white"></div>
+                      <div class="green"></div>
+                      <div class="blue"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-wrap" style="color: #28292B">
+                  <div class="detail-info new">
+                    <div class="background-title">mini</div>
+                    <span class="detail-title">mini 40</span>
+                    <div class="color-name">
+                      <p>Black</p>
+                    </div>
+                    <a href="https://www.fujifilm.co.kr/goods/detail.do?goodsIdx=50312" class="btn detail-buy-button">
+                      <span>구매하기</span>
+                    </a>
+                  </div>
+                  <div class="detail-camera">
+                    <div class="detail-pic camera">
+                      <img src="images/mini_40_black.png" alt="mini40" />
+                    </div>
+                    <div class="detail-color">
+                      <div class="black"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-wrap" style="color: #A33945">
+                  <div class="detail-info">
+                    <div class="background-title">mini</div>
+                    <span class="detail-title">mini 90</span>
+                    <div class="color-name">
+                      <p>Red</p>
+                      <p>Brown</p>
+                      <p>Black</p>
+                    </div>
+                    <a href="https://www.fujifilm.co.kr/goods/detail.do?goodsIdx=47974" class="btn detail-buy-button">
+                      <span>구매하기</span>
+                    </a>
+                  </div>
+                  <div class="detail-camera">
+                    <div class="detail-pic camera">
+                      <img src="images/mini_90_red.png" alt="mini90" />
+                      <img src="images/mini_90_brown.png" alt="mini90" />
+                      <img src="images/mini_90_black.png" alt="mini90" />
+                    </div>
+                    <div class="detail-color">
+                      <div class="red"></div>
+                      <div class="brown"></div>
+                      <div class="black"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-wrap" style="color: #AC6F56">
+                  <div class="detail-info">
+                    <div class="background-title">square</div>
+                    <span class="detail-title">SQUARE SQ1</span>
+                    <div class="color-name">
+                      <p>Terracotta Orange</p>
+                      <p>Glacier Blue</p>
+                      <p>Chalk White</p>
+                    </div>
+                    <a href="https://www.fujifilm.co.kr/goods/detail.do?goodsIdx=46782" class="btn detail-buy-button">
+                      <span>구매하기</span>
+                    </a>
+                  </div>
+                  <div class="detail-camera">
+                    <div class="detail-pic camera">
+                      <img src="images/square_sq1_terracottaOrange.png" alt="squareSq1"/>
+                      <img src="images/square_sq1_glacierBlue.png" alt="squareSq1"/>
+                      <img src="images/square_sq1_chalkWhite.png" alt="squareSq1"/>
+                    </div>
+                    <div class="detail-color">
+                      <div class="orange"></div>
+                      <div class="blue"></div>
+                      <div class="chalk"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-wrap" style="color: #28292B">
+                  <div class="detail-info">
+                    <div class="background-title">square</div>
+                    <span class="detail-title">SQUARE SQ40</span>
+                    <div class="color-name">
+                      <p>Black</p>
+                    </div>
+                    <a href="https://www.fujifilm.co.kr/goods/detail.do?goodsIdx=50312" class="btn detail-buy-button">
+                      <span>구매하기</span>
+                    </a>
+                  </div>
+                  <div class="detail-camera">
+                    <div class="detail-pic camera">
+                      <img src="images/square_sq40_black.png" alt="squareSq40" />
+                    </div>
+                    <div class="detail-color">
+                      <div class="black"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-wrap" style="color: #D1ABA1">
+                  <div class="detail-info">
+                    <div class="background-title">wide</div>
+                    <span class="detail-title">WIDE 300</span>
+                    <div class="color-name">
+                      <p>Toffee</p>
+                      <p>Black</p>
+                    </div>
+                    <a href="https://www.fujifilm.co.kr/goods/detail.do?goodsIdx=46779" class="btn detail-buy-button">
+                      <span>구매하기</span>
+                    </a>
+                  </div>
+                  <div class="detail-camera">
+                    <div class="detail-pic camera">
+                      <img src="images/wide_300_toffee.png" alt="wide300" />
+                      <img src="images/wide_300_black.png" alt="wide300" />
+                    </div>
+                    <div class="detail-color">
+                      <div class="toffee"></div>
+                      <div class="black"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 악세사리 -->
+      <section class="accessories">
+        <div class="inner">
+          <div class="background-title" data-aos="fade-up" data-aos-duration="1000">Accessories</div>
+          <div class="accessories-box" data-aos="fade-up" data-aos-duration="1000">
+            <a href="#" class="film imghoverevent">
+              <div class="hoverbox">
+                <span>
+                  <p class="p">Film</p>
+                </span>
+              </div>
+            </a>
+            <a href="#" class="case imghoverevent">
+              <div class="hoverbox">
+                <span>
+                  <p class="p">Case</p>
+                </span>
+              </div>
+            </a>
+            <a href="#" class="album imghoverevent">
+              <div class="hoverbox">
+                <span>
+                  <p class="p">Album</p>
+                </span>
+              </div>
+            </a>
+            <a href="#" class="frame imghoverevent">
+              <div class="hoverbox">
+                <span>
+                  <p class="p">Frame</p>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 배너 -->
+      <section class="banner" data-aos="fade-down" data-aos-duration="1000">
+        <div class="inner">
+          <div class="banner-wrap" >
+            <div class="banner-event banner-box">
+              <div class="banner-title banner-event-title">이벤트</div>
+              <span class="banner-set-txt">
+                인스탁스 데이에 여러분을 초대합니다!
+              </span>
+              <div class="banner-img">
+                <img src="images/event_logo.png" alt="이벤트로고" />
+              </div>
+              <a href="javascript:void(0);" onclick="openPopup()" class="banner-button">참여하기</a>
+            </div>
+            <div class="banner-set banner-box">
+              <div class="banner-title banner-set-title">기획상품</div>
+              <span class="banner-set-txt">다양한 기획상품을 만나보세요!</span>
+              <div class="banner-img">
+                <img src="images/product_set.png" alt="기획세트" />
+              </div>
+              <a href="javascript:void(0);" onclick="SellopenPopup()" class="banner-button">보러가기</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 하단 -->
+      <footer class="footer">
+        <div class="inner">
+          <!-- 푸터 왼쪽-->
+          <div class="footer-left">
+            <img src="images/logo.png" alt="푸터로고" />
+            <ul>
+              <li>대구 중구 중앙대로 394, 제일빌딩/ 5층</li>
+              <li>사업자 등록 번호 : 2312321-95048200</li>
+              <li>&COPY;COPYRIGHT 2023 INSTAX ALL RIGHTS RESERVED</li>
+            </ul>
+            <!-- sns -->
+            <div class="sns">
+              <h2>Follow us</h2>
+              <div class="sns-icon">
+                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="" /></a>
+                <a href="https://ko-kr.facebook.com/"><img src="images/facebook.png" alt="" /></a>
+                <a href="https://twitter.com/?lang=ko"><img src="images/twitter.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-info">
+              <h2>제품정보</h2>
+              <ul>
+                <li><a href="#">카메라</a></li>
+                <li><a href="#">필름</a></li>
+                <li><a href="#">액세서리</a></li>
+              </ul>
+            </div>
+            <div class="footer-office">
+              <h2>회사안내</h2>
+              <ul>
+                <li><a href="#">인스탁스 소개</a></li>
+                <li><a href="#">브랜드 스토리</a></li>
+                <li><a href="#">새소식</a></li>
+              </ul>
+            </div>
+            <div class="footer-help">
+              <h2>고객지원</h2>
+              <ul>
+                <li><a href="#">상품등록</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="#">서비스 센터</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <ul>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이메일수신수집여부</a></li>
+              <li><a href="#">윤리위반신고</a></li>
+              <li><a href="#">1:1상담</a></li>
+              <li><a href="#">알림신청</a></li>
+              <li><a href="#">보안인증</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KZR7NHXR"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    >
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</html>

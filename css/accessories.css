@@ -1,0 +1,158 @@
+/* 악세사리 */
+.accessories {
+    height: auto;
+    padding-top: 170px;
+    padding-bottom: 200px;
+}
+.accessories .inner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 800;
+}
+.accessories .background-title{
+    position: absolute;
+    left: -100px;
+    top: -210px;
+    font-family: 'Pacifico', cursive;
+    font-size: 200px;
+    color: #c9c9c9;
+    z-index: -99;
+}
+.accessories .accessories-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2%;
+}
+.imghoverevent{
+    width: 30vw;
+    max-width: 280px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s;
+}
+.imghoverevent:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.hoverbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 1 / 1;
+}
+.hoverbox span{
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    width: 120%;
+    height: 120px;
+    text-align: center;
+    left: -40px;
+    transition: 0.5s;
+    transform: rotate(10deg);
+    color: #fff;
+}
+.hoverbox span p{
+    position: absolute;
+    top: 12px;
+    left: 21%;
+    margin-top: 15px;
+    font-size: 200%;
+    font-weight: 700;
+}
+.imghoverevent:hover .hoverbox span{
+    bottom: -40px;
+}
+.film .hoverbox span{
+    background: linear-gradient(to right, #C1ADFB, #C775CC);
+}
+.film .hoverbox{
+    background: url(../images/film_square_classic2.png) no-repeat center;
+    background-size: 100%;
+}
+.case .hoverbox span{
+    background: linear-gradient(to right, #90DEFF, #6db5f3);
+}
+.case .hoverbox{
+    background: url(../images/case.png) no-repeat center;
+    background-size: 100%;
+}
+.album .hoverbox span{
+    background: linear-gradient(to right, #FAA489, #F08797);
+}
+.album .hoverbox{
+    background: url(../images/photoAlbum.png) no-repeat center;
+    background-size: 100%;
+}
+.frame .hoverbox span{
+    background: linear-gradient(to right, #E5DFE2, #C8C3CD);
+}
+.frame .hoverbox{
+    background: url(../images/frame.png) no-repeat center;
+    background-size: 100%;
+}
+
+
+
+@media all and (max-width: 1680px) {
+}
+@media all and (max-width: 1280px) {
+}
+@media all and (max-width: 1024px) {
+    .accessories .background-title{
+        left: -40px;
+        top: -180px;
+        font-size: 170px;
+    }
+}
+/* mobile */
+@media all and (max-width: 768px) {
+    .accessories{
+        padding-top: 80px;
+    }
+    .accessories .background-title{
+        left: -30px;
+        top: -105px;
+        font-size: 120px;
+    }
+    .imghoverevent{
+        width: 48%;
+        aspect-ratio: 1 / 1;
+        margin-top: 25px;
+        max-width: 100%;
+    }
+    .accessories-title{
+        font-size: 50px;
+    }
+    .accessories .accessories-box{
+        flex-wrap: wrap;
+    }
+    .hoverbox{
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        max-width: 100%;
+    }
+    .hoverbox span p{
+        top: 15.5px;
+        font-size: 4.5vw;
+    }
+}
+@media all and (max-width: 480px) {
+    .hoverbox span p{
+        left: 60px;
+        font-size: 6vw;
+    }
+    .accessories .background-title{
+        left: -20px;
+        top: -62px;
+        font-size: 80px;
+    }
+}

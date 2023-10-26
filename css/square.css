@@ -1,0 +1,254 @@
+/* 스퀘어 필름 */
+.square {
+  height: 100vh;
+    position: relative;
+}
+.square::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#c0adb000,#FAA489,#FAA489,#c0adb000);
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.square-active::before{
+  opacity: 1;
+}
+.square .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.square-circle {
+  position: relative;
+  width: 43%;
+  border-radius: 500px;
+  background-color: #fff; box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3);
+}
+.square-circle::after{
+   content: "";
+   display: block;
+   padding-bottom: 100%;
+  
+}
+.square-point{
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+  top:8%;
+  right:65% ;
+}
+.square-point.active{
+  opacity: 1;
+   width: 35%;
+  z-index: 99;
+  transition-delay: 0.3s;
+}
+  .square-point img{
+  width: 100%;
+  z-index: 99;
+  }
+  .square-point2{
+    position: absolute; 
+    opacity: 0; 
+    transition: 1s;
+    width: 40%;
+    top:70%;
+    right: 70%;
+    z-index: 999;
+    transition-delay: 0.3s;
+  }
+  .square-point2 img {
+    width: 80%;
+  }
+  .square-point2-active{
+    opacity: 1; 
+    
+ 
+  }
+  
+.square-point-text{
+    position: absolute;
+    color: #000000;
+    font-size: 20px;
+   font-weight: 400;
+   top: 115%;
+   left: -53%;
+  }
+  .square-point-text2{
+    position: absolute;
+    color: #000000;
+    font-size: 20px;
+   font-weight: 400;
+   top: -96%;
+   left: -21%;
+  }
+
+  .square-camera {
+    position: absolute;
+    width: 84%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+  }
+  .square-camera img {
+    width: 100%;
+  }
+  
+.square-film{
+  position: absolute;
+  top: 30%;
+  left: 53%;
+  transform: translateX(-50%);
+  transition-duration: 1s;
+}
+.square-film img{
+  width: 100%;
+  
+}
+.square-text{
+    top: 137px;
+    right: 102%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .square-text h1{
+  font-size: 3vw;
+  font-weight: 800;
+  color: black;
+}
+.square-text h4{
+  margin-top: 40px;
+  padding: 10px 0px;
+  font-size: 1.2vw;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* .square active */
+.square-active .square-film {
+top: -18%;
+}
+/* 반응형 디자인 */
+@media all and (max-width: 1680px) {
+}
+
+@media (max-width: 1280px) {
+  
+}
+@media all and (max-width: 1024px) {
+}
+
+/* mobile */
+@media all and (max-width: 768px) {
+  .square .inner{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .square {
+    height: auto;
+  }
+  .square-circle {
+    order: 2;
+    width: 90%;
+    top: 50%;
+    margin: 27%;
+  }
+  .square-point-text{
+    color: #000000;
+    font-size: 15px;
+   font-weight: 400;
+   top: 105%;
+   left: -16%;
+  }
+  .square-point-text2{
+    color: #000000;
+    font-size: 15px;
+   font-weight: 400;
+   top: -95%;
+   left: 8%;
+  }
+  .square-point img{
+     width:80%;
+    top:2%;
+    right: 63%;
+    z-index: 99;
+  }
+  .squre-point2{
+    position: absolute;
+    width: 40%;
+    top: 70%;
+    right: 80%;
+    z-index: 999;
+  }
+  .square-point2 img {
+   width: 60%;
+   
+  }
+  .square-camera {
+    top: 20%;
+  }
+  .square-text {
+    order:1;
+    
+  }
+  .square-text h1 {
+    font-size: 5vw;
+   
+  }
+  .square-text h4 {
+    font-size: 2.7vw;
+  }
+  .square-film {
+    top: 40%;
+  }
+}
+@media all and (max-width: 480px) {
+  .square .inner{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .square-point img{
+    width: 90%;
+    top:2%;
+    right: 63%;
+    z-index: 99;
+  }
+  .square-circle {
+    width: 70%;
+    
+  }
+  .square-point2 img {
+    width: 80%;
+    top:68%;
+    right: 73%;
+   z-index: 999;
+  }
+  .square-point-text {
+    font-size: 10px;
+    left: -11px;
+  }
+  .square-text h1 {
+    font-size: 30px;
+  }
+  .square-text h4 {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  .square-point-text2{
+    color: #000000;
+    font-size: 10px;
+   font-weight: 400;
+   top: -70%;
+   left: 1%;
+  }
+}
+
+

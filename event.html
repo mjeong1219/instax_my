@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="INSTAX DAY | 순간을 담아 꾸미는 나만의 이야기" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="INSTAX DAY | 순간을 담아 꾸미는 나만의 이야기" />
+    <meta property="og:description" content="INSTAX DAY | 순간을 담아 꾸미는 나만의 이야기" />
+    <meta property="og:image" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="event-favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="evnet-favicon-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/mobile_web_icon.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>INSTAX DAY | 순간을 담아 꾸미는 나만의 이야기</title>
+    <!-- [if lt IE 9]
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    [endif] -->
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <script src="js/event.js"></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KZR7NHXR");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <div class="event">
+      <div class="inner">
+        <!-- 이벤트 메인 -->
+        <div class="event-main-logo">
+          <img src="images/event-main.png" alt="이벤트 메인 로고" />
+          <img src="images/event-date.png" alt="이벤트 기간" />
+        </div>
+        <!-- 이벤트 1 -->
+        <div class="event1 event-box" data-aos="fade-up" data-aos-duration="1000">
+          <div class="event-title">
+            <img src="images/event-title1.png" alt="이벤트1 타이틀" />
+            <div class="event-tip">
+              <img src="images/event1-tip1.png" alt="이벤트1 tip1" />
+              <span>원하는 <b>인스탁스를 선택</b>하고 대여 신청하세요.</span>
+              <img src="images/event1-tip2.png" alt="이벤트1 tip2" />
+              <span>
+                이벤트 기간 동안 3일 단위로
+                <b>각 제품 당 10명씩, <br />총 60명</b>이 선정되어
+                <b>안내문자가 발송</b>됩니다.
+              </span>
+              <img src="images/event1-tip3.png" alt="이벤트1 tip3" />
+              <span>
+                <b>3일 동안</b> 인스탁스와 함께 <b>나만의 이야기</b>를 만드세요!
+              </span>
+              <img src="images/event1-tip4.png" alt="이벤트1 tip4" />
+              <span>
+                대여 종료 시 <b>안내된 반환 방법에 따라 반납</b>하고
+                <b>EVENT2</b>에도 참여해보세요!
+              </span>
+            </div>
+            <div class="event-txt">
+              <span><b>참여 대상</b> : 인스탁스를 경험해 보고 싶은 누구나!</span>
+              <span><b>신청 기간</b> : 2023년 9월 1일 금요일 ~ 9월 8일 금요일</span>
+              <span><b>당첨자 발표</b> : 2023년 9월 12일 화요일</span>
+            </div>
+          </div>
+          <div class="event1-main">
+            <img src="images/event1-main.png" alt="이벤트1 메인배경" />
+            <img src="images/event1-img.png" alt="이벤트1 메인이미지" />
+          </div>
+          <button id="open-modal-button">
+            <span>대여 신청하기</span>
+          </button>
+        </div>
+        <div id="event-modal" class="modal">
+          <div class="modal-content">
+              <span class="close-button" id="close-modal-button">&times;</span>
+              <h2>이벤트 참여 양식</h2>
+              <form id="registration-form">
+                  <label for="name">이름</label>
+                  <input type="text" id="name" name="name" required>
+                  
+                  <label for="email">이메일</label>
+                  <input type="email" id="email" name="email" required>
+
+                  <label for="phone">전화번호</label>
+                  <input type="tel" id="phone" name="phone" required>
+                  <label for="selection">선택사항</label>
+                  <select id="selection">
+                      <option value="옵션1">instax mini 12</option>
+                      <option value="옵션2">instax mini 40</option>
+                      <option value="옵션3">instax mini 90</option>
+                      <option value="옵션4">instax square sq 1</option>
+                      <option value="옵션5">instax square sq 40</option>
+                      <option value="옵션6">instax wide 300</option>
+                      <!-- 필요한 옵션을 추가하세요 -->
+                  </select>
+                  <label for="privacy-agreement" class="ckbox">
+                    개인정보수집동의
+                    <input type="checkbox" id="privacy-agreement" required>
+                </label>
+                  <button type="submit">참여하기</button>
+              </form>
+          </div>
+      </div>
+
+      <div id="result-modal" class="modal" style="display:none;">
+          <div class="modal-content">
+              <h2>참여 결과</h2>
+              <p id="result-message"></p>
+              <button id="close-result-button">닫기</button>
+          </div>
+      </div>
+        <!-- 이벤트 2 -->
+        <div class="event2 event-box" data-aos="fade-up" data-aos-duration="1000">
+          <div class="event-title">
+            <img src="images/event-title2.png" alt="이벤트2 타이틀" />
+          </div>
+          <span class="event2-main-txt">인스탁스로 꾸미고 인스타그램에 올리면 선물이 팡팡!</span>
+          <div class="event-txt">
+            <span><b>참여 기간</b> : 2023년 9월 1일 금요일 ~ 10월 27일 금요일</span>
+            <span><b>당첨자 발표</b> : 2023년 10월 31일 화요일</span>
+          </div>
+          <div class="event-main">
+            <div class="event-info-titles">
+              <div class="event-info-title" data-target="event-room">
+                <img src="images/event-info-title1.png" alt="방꾸미기 타이틀" />
+              </div>
+              <div class="event-info-title" data-target="event-film">
+                <img src="images/event-info-title2.png" alt="필름꾸미기 타이틀" />
+              </div>
+              <div class="event-info-title" data-target="event-diary">
+                <img src="images/event-info-title3.png" alt="다이어리꾸미기 타이틀" />
+              </div>
+            </div>
+            <div class="event-info">
+              <div class="event-info-box event-room">
+                <div class="event-tip">
+                  <img src="images/event-tip.png" alt="이벤트2 tip" />
+                  <span>
+                    <b>인스탁스로 꾸민 방을 촬영</b>하여<br />
+                    <b>필수 해시태그</b>를 달아 <b>인스타그램에 업로드</b>하면
+                    참여완료!
+                  </span>
+                </div>
+                <div class="hashtag">#인스탁스 #인스탁스데이 #인스탁스방꾸</div>
+                <div class="event-ex">
+                  <img src="images/event-room1.jpg" alt="방꾸미기 이미지1" />
+                  <img src="images/event-room2.jpg" alt="방꾸미기 이미지2" />
+                </div>
+              </div>
+              <div class="event-info-box event-film">
+                <div class="event-tip">
+                  <img src="images/event-tip.png" alt="이벤트2 tip" />
+                  <span>
+                    <b>꾸민 인스탁스 필름을 촬영</b>하여<br />
+                    <b>필수 해시태그</b>를 달아 <b>인스타그램에 업로드</b>하면
+                    참여완료!
+                  </span>
+                </div>
+                <div class="hashtag">
+                  <span>#인스탁스 #인스탁스데이 #인스탁스필꾸</span>
+                </div>
+                <div class="event-ex">
+                  <img src="images/event-film1.jpg" alt="필름꾸미기 이미지1" />
+                  <img src="images/event-film2.jpg" alt="필름꾸미기 이미지2" />
+                </div>
+              </div>
+              <div class="event-info-box event-diary">
+                <div class="event-tip">
+                  <img src="images/event-tip.png" alt="이벤트2 tip" />
+                  <span>
+                    <b>인스탁스로 꾸민 다이어리를 촬영</b>하여<br />
+                    <b>필수 해시태그</b>를 달아 <b>인스타그램에 업로드</b>하면
+                    참여완료!
+                  </span>
+                </div>
+                <div class="hashtag">
+                  <span>#인스탁스 #인스탁스데이 #인스탁스다꾸</span>
+                </div>
+                <div class="event-ex">
+                  <img src="images/event-diary1.jpg" alt="다이어리꾸미기 이미지1" />
+                  <img src="images/event-diary2.jpg" alt="다이어리꾸미기 이미지2" />
+                </div>
+              </div>
+              <a href="https://www.instagram.com/explore/tags/%EC%9D%B8%EC%8A%A4%ED%83%81%EC%8A%A4/" class="btn">
+                <span>다른 작품 구경하기</span>
+              </a>
+              <img src="images/gift-line.png" class="gift-line" alt="경품안내" />
+              <span class="event2-txt"><b>♥</b>를 가장 많이 받은 베스트 게시물에는 <b>푸짐한 선물</b>을 드립니다.</span>
+              <div class="event-gift">
+                <span class="event-gift1-title gift-title">1등 상품</span>
+                <img src="images/event-gift1.png" class="event-gift1" alt="1등 상품" />
+                <span>인스탁스 mini12 꾸미기 풀세트</span>
+              </div>
+              <div class="event-gift-footer">
+                <div class="event-gift-box">
+                  <span class="event-gift2-title gift-title">2등 상품</span>
+                  <img src="images/mini_12_lilacPurple.png" class="event-gift2" alt="2등 상품" />
+                  <span>인스탁스 mini12 본품</span>
+                </div>
+                <div class="event-gift-box">
+                  <span class="event-gift3-title gift-title">3등 상품</span>
+                  <img src="images/event-gift3.png" class="event-gift3" alt="3등 상품" />
+                  <span>필름 + 꾸미기 세트</span>
+                </div>
+                <div class="event-gift-box">
+                  <span class="event-gift4-title gift-title">추첨 상품</span>
+                  <img src="images/event-gift4.png" class="event-gift4" alt="추첨 상품" />
+                  <span>한정판 필름 (랜덤)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="event-footer">
+        <h3><i class="fa-solid fa-circle-info"></i> 꼭 알아두세요</h3>
+        <ul>
+          <li>본 이벤트는 당사 사정으로 사전 안내 없이 변경될 수 있습니다.</li>
+          <li>
+            경품당첨 시 경품지급일 하루 전까지 마케팅 정보 수신(SNS)에 동의한
+            회원님에게만 발송될 예정입니다.
+          </li>
+          <li>
+            경품당첨 시 입력한 주소로 배송 되오니 주소 정보를 확인해주세요.
+            부정확한 주소정보로 인해 피해 발생시 당사에서 책임지지 않습니다.
+          </li>
+          <li>대여된 제품이 파손될 경우 본사 규정에 의해 처리됩니다.</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const openModalButton = document.getElementById('open-modal-button');
+    const closeModalButton = document.getElementById('close-modal-button');
+    const closeResultButton = document.getElementById('close-result-button');
+    const eventModal = document.getElementById('event-modal');
+    const resultModal = document.getElementById('result-modal');
+    const registrationForm = document.getElementById('registration-form');
+    const resultMessage = document.getElementById('result-message');
+
+    // 모달 열기
+    openModalButton.addEventListener('click', function() {
+        eventModal.style.display = 'block';
+    });
+
+    // 모달 닫기
+    closeModalButton.addEventListener('click', function() {
+        eventModal.style.display = 'none';
+    });
+
+    // 이벤트 참여 양식 제출
+    registrationForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // 사용자가 입력한 정보 가져오기
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+
+        // 간단한 양식 검증 (여기서는 각 필드가 비어 있는지만 확인)
+        if (name === '' || email === '' || phone === '') {
+            alert('모든 필드를 작성해주세요.');
+            return;
+        }
+
+        // 결과 메시지 표시
+        resultMessage.textContent = `${name}님, 이벤트에 참여해주셔서 감사합니다!`;
+        resultModal.style.display = 'block';
+    });
+
+    // 결과 모달 닫기
+    closeResultButton.addEventListener('click', function() {
+        resultModal.style.display = 'none';
+    });
+    // 이벤트 참여 양식 제출
+registrationForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // 사용자가 입력한 정보 가져오기
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const selection = document.getElementById('selection').value;
+
+    // 간단한 양식 검증 (여기서는 각 필드가 비어 있는지만 확인)
+    if (name === '' || email === '' || phone === '') {
+        alert('모든 필드를 작성해주세요.');
+        return;
+    }
+    // 결과 메시지 표시
+    let message = `${name}님, 이벤트에 참여해주셔서 감사합니다!`;
+    
+
+
+    resultMessage.textContent = message;
+    resultModal.style.display = 'block';
+
+    // 참여 완료 후 모달 창 닫기
+    eventModal.style.display = 'none';
+});
+});
+
+    AOS.init();
+  </script>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KZR7NHXR"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    >
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</html>
